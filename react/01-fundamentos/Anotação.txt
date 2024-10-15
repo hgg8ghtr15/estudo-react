@@ -1,0 +1,26 @@
+
+yarn init -y
+
+### Dependencias
+
+yarn add react
+yarn add react-dom
+yarn add @babel/core @babel/cli @babel/preset-env -D
+yarn add @babel/preset-react -D
+yarn add babel-loader -D 
+yarn add webpack webpack-cli webpack-dev-server -D
+yarn add html-webpack-plugin -D
+yarn add cross-env -D
+yarn add style-loader css-loader -D
+yarn add sass-loader -D
+yarn add sass node-sass -D
+
+
+### Converter
+
+yarn babel src/index.js --out-file dist/bundle.js
+yarn babel src/index.jsx --out-file dist/bundle.js
+
+### execução
+yarn webpack
+
