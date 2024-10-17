@@ -24,3 +24,12 @@ yarn babel src/index.jsx --out-file dist/bundle.js
 ### execução
 yarn webpack
 
+### Usando TypeScript
+yarn add typescript
+
+yarn tsc --init
+
+configurar o aquivo tsconfig
+
+yarn add @babel/preset-typescript -D
+
