@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+      // Define as bibliotecas usadas no projeto para fornecer tipos:
+      // - "dom": Tipos para interagir com a API do navegador (document, window)
+      // - "dom.iterable": Suporte a iteração de objetos como NodeList e HTMLCollection
+      // - "esnext": Inclui as funcionalidades mais recentes do ECMAScript
+      "lib": ["dom", "dom.iterable", "esnext"],
+    
+      // Permite que arquivos JavaScript (.js) sejam compilados pelo TypeScript
+      "allowJs": true,
+    
+      // Configura a transformação JSX para projetos React, usando a nova sintaxe do React 17
+      "jsx": "react-jsx",
+    
+      // Impede que o TypeScript emita arquivos de saída (.js), usado apenas para checagem de tipos
+      "noEmit": true,
+    
+      // Ativa o modo estrito de verificação de tipos, garantindo maior segurança no código
+      "strict": true,
+    
+      // Define a resolução de módulos no estilo Node.js versão 10
+      "moduleResolution": "node10",
+    
+      // Permite importar arquivos .json diretamente, com checagem de tipos
+      "resolveJsonModule": true,
+    
+      // Garante que cada arquivo seja tratado como um módulo isolado, útil ao usar Babel com TS
+      "isolatedModules": true,
+    
+      // Permite importações padrão sintéticas, mesmo se a exportação padrão não existir
+      "allowSyntheticDefaultImports": true,
+    
+      // Gera compatibilidade entre módulos CommonJS e ES6, permitindo importação padrão de CJS
+      "esModuleInterop": true,
+    
+      // Pula a verificação de tipos em arquivos de declaração (.d.ts), acelerando a compilação
+      "skipLibCheck": true,
+    
+      // Exige consistência no uso de maiúsculas/minúsculas em nomes de arquivos
+      "forceConsistentCasingInFileNames": true
+  },
+  // Aonde fica o código da nossa aplicação.
+  "include": ["src"]
+}
